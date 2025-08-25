@@ -1,4 +1,4 @@
-class TicTacToeFacade {
+class TicTacToe {
     constructor(gridBlockList, gameInst, restartBtn) {
         this.gridBlockList = gridBlockList;
         this.gameInst = gameInst;
@@ -75,7 +75,7 @@ const gridBlockList = document.querySelectorAll(".grid-block");
 const gameInst = document.getElementById("game-instructions");
 const restartBtn = document.getElementById("button-tryagain");
 
-const game = new TicTacToeFacade(gridBlockList, gameInst, restartBtn);
+const game = new TicTacToe(gridBlockList, gameInst, restartBtn);
 
 gridBlockList.forEach(block => {
     block.addEventListener("click", (e) => {
